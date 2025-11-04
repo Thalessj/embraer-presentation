@@ -1,6 +1,6 @@
 'use client'
 
-import Timeline from "@/components/Timeline";
+import Timeline from "@/shared/Timeline";
 import { motion } from "framer-motion";
 import { Plane } from "lucide-react";
 

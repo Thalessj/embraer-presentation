@@ -1,4 +1,4 @@
-import Card from "@/components/Cards";
+import Card from "@/shared/Cards";
 import Image from "next/image";
 
 export default function Formations() {
