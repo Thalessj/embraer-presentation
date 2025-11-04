@@ -137,7 +137,9 @@ export default function Formations() {
                             <div className="flex flex-col justify-center space-y-6">
                                 <div className="bg-gray-900/40 backdrop-blur-md border border-gray-700/30 rounded-xl p-6 hover:border-blue-500/50 transition duration-300">
                                     <Card title="Apresentação JOIA (Unesp Botucatu)" variant="cyan">
-                                        <p>Foi apresentado um trabalho de conclusão de curso da turma do ano passado do técnico em meio ambiente</p>
+                                        <p>Participei da Apresentação JOIA (Jovens Iniciativas Acadêmicas), realizada na Unesp Botucatu, representando a turma anterior do curso técnico em Meio Ambiente, onde fui responsável por apresentar o trabalho de conclusão de curso da classe do ano passado.
+                                            Além disso, o meu atual TCC, desenvolvido em grupo, foi premiado no evento pelo destaque em relevância ambiental e qualidade técnica, sendo apresentado por outro integrante da equipe.
+                                            Essa experiência me proporcionou contato direto com o meio acadêmico, aprimorou minhas habilidades de comunicação e exposição em público, e reforçou minha visão sobre o impacto da ciência e da tecnologia na sustentabilidade.</p>
                                     </Card>
                                 </div>
                             </div>

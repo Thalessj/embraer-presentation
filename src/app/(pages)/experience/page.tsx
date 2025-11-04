@@ -24,7 +24,7 @@ export default function Experience() {
                 "Acompanhamento de processos industriais e operação de sistemas de produção de Papel.",
                 "Comunicação direta com equipes de qualidade e manutenção, garantindo fluxo de produção contínuo.",
                 "Análise e atualização de etiquetas com QR Code para rastreio de bobinas.",
-                "Essa vivência me mostrou o quanto tecnologia e operação se conectam, e como cada dado ou processo impacta diretamente o resultado real da produção",
+                "Essa vivência me mostrou o quanto tecnologia e operação se conectam, e como cada dado ou processo impacta diretamente o resultado real da produção.",
             ],
             variant: "blue" as const,
         },
@@ -46,7 +46,7 @@ export default function Experience() {
             logo: "/image/workehub_logo.png",
             period: "2023 - 2024",
             description: [
-                "Criação de interfaces responsivas e interativas utilizando frameworks modernos como React, Nextjs, garantindo uma experiência de usuário fluida em múltiplos dispositivos..",
+                "Criação de interfaces responsivas e interativas utilizando frameworks modernos como React, Nextjs, garantindo uma experiência de usuário fluida em múltiplos dispositivos.",
                 "Foco em interfaces modernas e intuitivas com Css-in-Js e integração com APIs.",
                 "Criação de soluções de autenticação seguras com NextAuth e JWT.",
             ],
