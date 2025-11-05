@@ -11,10 +11,10 @@ export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
-    const hasSeenSplash = localStorage.getItem("hasSeenSplash")
-    if (!hasSeenSplash) {
+    const Splash = localStorage.getItem("Splash")
+    if (!Splash) {
       setShowSplash(true)
-      localStorage.setItem("hasSeenSplash", "true")
+      localStorage.setItem("Splash", "true")
     } else {
       setIsLoaded(true)
     }
