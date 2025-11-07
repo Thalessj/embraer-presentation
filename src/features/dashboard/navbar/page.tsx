@@ -2,12 +2,14 @@
 import { Menu, X, Plane } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 export default function Navbar() {
     const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
+    const [direction, setDirection] = useState<"forward" | "backward" | null>(null);
+    const prevPathRef = useRef(pathname);
 
     const NavItems = [
         { name: "Sobre", href: "/" },
@@ -15,6 +17,15 @@ export default function Navbar() {
         { name: "Experiência", href: "/experience" },
         { name: "Embraer", href: "/embraer" },
     ];
+
+    useEffect(() => {
+        const prevIndex = NavItems.findIndex(i => i.href === prevPathRef.current);
+        const currentIndex = NavItems.findIndex(i => i.href === pathname);
+        if (prevIndex !== -1 && currentIndex !== -1) {
+            setDirection(currentIndex > prevIndex ? "forward" : "backward");
+        }
+        prevPathRef.current = pathname;
+    }, [pathname]);
 
     const toggleMenu = () => setIsOpen(!isOpen);
     const closeMenu = () => setIsOpen(false);
@@ -46,7 +57,16 @@ export default function Navbar() {
                                         transition={{ type: "spring", stiffness: 380, damping: 25 }}
                                         className="absolute -bottom-4 left-1/2 transform -translate-x-1/2"
                                     >
-                                        <Plane className="text-white rotate-45" size={25} />
+                                        <motion.div
+                                            key={direction}
+                                            animate={{
+                                                rotate: direction === "backward" ? -135 : 45,
+                                                x: direction === "backward" ? -5 : 5,
+                                            }}
+                                            transition={{ duration: 0.4 }}
+                                        >
+                                            <Plane className="text-white" size={25} />
+                                        </motion.div>
                                     </motion.div>
                                 )}
                             </div>
